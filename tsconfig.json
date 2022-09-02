@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "ES6",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "downlevelIteration": true,
+
+    /* Strict Type-Checking Options */
+    "strict": true,
+    "noImplicitAny": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@src/*": ["src/*"]
+    },
+    "esModuleInterop": true,
+    "jsx": "react",
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
