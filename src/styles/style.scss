@@ -9,6 +9,8 @@ $apply-button-bgc: #0067FF;
 $apply-button-disabled-bgc: #F7F7FA;
 $main-box-width: 1860px;
 $main-box-height: 726px;
+$main-margin-bottom-value: 3rem;
+$main-custom-button-margin-bottom-value: 48px;
 $font: Noto Sans CJK KR;
 $logo-width: 1.7rem;
 $body-bcg: #F7F7FA;
@@ -211,5 +213,24 @@ main {
     height: 55%;
     border: 1px solid #E1E3E9;
     border-radius: $border-radius-value;
+  }
+
+  .main-button-area {
+    display: inline-block;
+    text-align: center;
+    border-bottom: 1px;
+    margin-bottom: calc($main-custom-button-margin-bottom-value + $main-margin-bottom-value);
+  }
+
+  .custom-button {
+    display: inline-block;
+    background-color: #F7F7FA;
+    border-radius: $border-radius-value;
+    color: #9DA1A8;
+    width: 104px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: center;
   }
 }
