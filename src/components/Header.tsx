@@ -1,5 +1,4 @@
 import React, { FC } from 'react'
-import '@src/styles/style.scss'
 import logo from '@src/assets/review_share_logo.png'
 
 const Header: FC = () => {

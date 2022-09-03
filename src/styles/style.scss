@@ -11,6 +11,9 @@ $main-box-width: 1860px;
 $main-box-height: 726px;
 $font: Noto Sans CJK KR;
 $logo-width: 1.7rem;
+$body-bcg: #F7F7FA;
+$nav-selected: #F0F3FF;
+$main-border-color: #E1E3E9;
 
 @page {
   margin: 0;
@@ -19,10 +22,14 @@ $logo-width: 1.7rem;
   font-weight: 400;
   font-size: 21px;
   color: #202225;
+  background-color: #F7F7FA;
 }
 
 body {
   margin: 0;
+  background-color: $body-bcg;
+  width: 1920px;
+  height: 1020px;
 }
 
 header {
@@ -57,4 +64,126 @@ header {
   }
 }
 
+main {
+  background-color: #FFFFFF;
+  margin: 3rem 2rem 3rem 2rem;
+  border: solid 1px $main-border-color;
+  border-radius: 5px;
+  width: 1860px;
+  height: 726px;
 
+  nav {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    border-bottom: 1px solid $main-border-color;
+    .nav-tab {
+      display: inline-block;
+      width: 202px;
+      font-weight: 500;
+      color: #9DA1A8;
+      text-align: center;
+      vertical-align: middle;
+      border-right: 1px solid $main-border-color;
+    }
+  }
+
+  .table-box {
+    width: 1779px;
+    height: 544px;
+    margin: 40px;
+  }
+
+  .table-head {
+    display: table;
+    border-collapse: collapse;
+    background-color: #F7F7FA;
+    height: 2.5rem;
+  }
+
+  .table-head-cell {
+    display: table-cell;
+    border: 1px solid #E1E3E9;
+    border-collapse: collapse;
+    color: #52565D;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .table-body {
+    background-color: #FFFFFF;
+    display: table;
+    border-collapse: collapse;
+    height: 2.5rem;
+  }
+
+  .table-body-cell {
+    display: table-cell;
+    border: 1px solid #E1E3E9;
+    border-top: 0;
+    border-collapse: collapse;
+    color: #52565D;
+    text-align: center;
+    vertical-align: middle;
+  }
+  // 체크박스
+  .col1 {
+    width: 3%;
+  }
+  // 별표
+  .col2 {
+    width: 3%;
+  }
+  // NO
+  .col3 {
+    width: 3%;
+  }
+  // 등급
+  .col4 {
+    width: 3%;
+  }
+  // 이름(닉네임)
+  .col5 {
+    width: 3%;
+  }
+  // 나이
+  .col6 {
+    width: 3%;
+  }
+  // 성별
+  .col7 {
+    width: 3%;
+  }
+  // 지역
+  .col8 {
+    width: 3%;
+  }
+  // 활동 분야
+  .col9 {
+    width: 3%;
+  }
+  // 전략
+  .col10 {
+    width: 10%;
+  }
+  // 추천수
+  .col11 {
+    width: 3%;
+  }
+  // 취소율
+  .col12 {
+    width: 3%;
+  }
+  // 평균 투데이
+  .col13 {
+    width: 3%;
+  }
+  // SNS 계정
+  .col14 {
+    width: 3%;
+  }
+  // 내 브랜드 참여
+  .col15 {
+    width: 3%;
+  }
+}
