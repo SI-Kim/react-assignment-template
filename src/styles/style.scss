@@ -14,6 +14,23 @@ $logo-width: 1.7rem;
 $body-bcg: #F7F7FA;
 $nav-selected: #F0F3FF;
 $main-border-color: #E1E3E9;
+$border-radius-value: 5px;
+$col1-width-potion: 56.6;   // 체크박스
+$col2-width-potion: 66;     // 별표
+$col3-width-potion: 61;     // NO
+$col4-width-potion: 63;     // 등급
+$col5-width-potion: 204;    // 이름(닉네임
+$col6-width-potion: 63;   // 나이
+$col7-width-potion: 60;   // 성별
+$col8-width-potion: 60;   // 지역
+$col9-width-potion: 153;   // 활동 분야
+$col10-width-potion: 532;  // 전략
+$col11-width-potion: 76;  // 추천수
+$col12-width-potion: 76;  // 취소율
+$col13-width-potion: 106;  // 평균 투데이
+$col14-width-potion: 94;  // SNS 계정
+$col15-width-potion: 108.5;  // 내 브랜드 참여
+$total-table-width-potion: $col1-width-potion + $col2-width-potion + $col3-width-potion + $col4-width-potion + $col5-width-potion + $col6-width-potion + $col7-width-potion + $col8-width-potion + $col9-width-potion + $col10-width-potion + $col11-width-potion + $col12-width-potion + $col13-width-potion + $col14-width-potion + $col15-width-potion;
 
 @page {
   margin: 0;
@@ -68,7 +85,7 @@ main {
   background-color: #FFFFFF;
   margin: 3rem 2rem 3rem 2rem;
   border: solid 1px $main-border-color;
-  border-radius: 5px;
+  border-radius: $border-radius-value;
   width: 1860px;
   height: 726px;
 
@@ -96,6 +113,7 @@ main {
 
   .table-head {
     display: table;
+    width: 100%;
     border-collapse: collapse;
     background-color: #F7F7FA;
     height: 2.5rem;
@@ -111,6 +129,7 @@ main {
   }
 
   .table-body {
+    width: 100%;
     background-color: #FFFFFF;
     display: table;
     border-collapse: collapse;
@@ -128,62 +147,69 @@ main {
   }
   // 체크박스
   .col1 {
-    width: 3%;
+    width: calc($col1-width-potion / $total-table-width-potion * 100%);
   }
   // 별표
   .col2 {
-    width: 3%;
+    width: calc($col2-width-potion / $total-table-width-potion * 100%);
   }
   // NO
   .col3 {
-    width: 3%;
+    width: calc($col3-width-potion / $total-table-width-potion * 100%);
   }
   // 등급
   .col4 {
-    width: 3%;
+    width: calc($col4-width-potion / $total-table-width-potion * 100%);
   }
   // 이름(닉네임)
   .col5 {
-    width: 3%;
+    width: calc($col5-width-potion / $total-table-width-potion * 100%);
   }
   // 나이
   .col6 {
-    width: 3%;
+    width: calc($col6-width-potion / $total-table-width-potion * 100%);
   }
   // 성별
   .col7 {
-    width: 3%;
+    width: calc($col7-width-potion / $total-table-width-potion * 100%);
   }
   // 지역
   .col8 {
-    width: 3%;
+    width: calc($col8-width-potion / $total-table-width-potion * 100%);
   }
   // 활동 분야
   .col9 {
-    width: 3%;
+    width: calc($col9-width-potion / $total-table-width-potion * 100%);
   }
   // 전략
   .col10 {
-    width: 10%;
+    width: calc($col10-width-potion / $total-table-width-potion * 100%);
   }
   // 추천수
   .col11 {
-    width: 3%;
+    width: calc($col11-width-potion / $total-table-width-potion * 100%);
   }
   // 취소율
   .col12 {
-    width: 3%;
+    width: calc($col12-width-potion / $total-table-width-potion * 100%);
   }
   // 평균 투데이
   .col13 {
-    width: 3%;
+    width: calc($col13-width-potion / $total-table-width-potion * 100%);
   }
   // SNS 계정
   .col14 {
-    width: 3%;
+    width: calc($col14-width-potion / $total-table-width-potion * 100%);
   }
   // 내 브랜드 참여
   .col15 {
-    width: 3%;
+    width: calc($col15-width-potion / $total-table-width-potion * 100%);
+  }
+
+  .strategy-input {
+    width: 90%;
+    height: 55%;
+    border: 1px solid #E1E3E9;
+    border-radius: $border-radius-value;
   }
 }

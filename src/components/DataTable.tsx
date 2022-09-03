@@ -8,6 +8,7 @@ const DataTable: FC = () => {
         tableHeadCell: 'table-head-cell',
         tableBody: 'table-body',
         tableBodyCell: 'table-body-cell',
+        strategyInput: 'strategy-input',
     }
     return (
         <div className={classNameObj.tableBox}>
@@ -65,7 +66,11 @@ const DataTable: FC = () => {
                     활동 분야
                 </div>
                 <div className={classNameObj.tableBodyCell + ' col10'}>
-                    <input type={'text'} placeholder={'내용이 없습니다.'} />
+                    <input
+                        className={classNameObj.strategyInput}
+                        type={'text'}
+                        placeholder={'내용이 없습니다.'}
+                    />
                 </div>
                 <div className={classNameObj.tableBodyCell + ' col11'}>
                     추천수
@@ -102,7 +107,10 @@ const DataTable: FC = () => {
                     활동 분야
                 </div>
                 <div className={classNameObj.tableBodyCell + ' col10'}>
-                    <input placeholder={'내용이 없습니다.'} />
+                    <input
+                        className={classNameObj.strategyInput}
+                        placeholder={'내용이 없습니다.'}
+                    />
                 </div>
                 <div className={classNameObj.tableBodyCell + ' col11'}>
                     추천수
