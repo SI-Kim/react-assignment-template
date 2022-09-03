@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+$header-bgc: #0067FF;
+$header-height: 3rem;
+$selected-tab-bgc: #F0F3FF;
+$table-head-bgc: #F7F7FA;
+$sns-button-bgc: #02C639;
+$apply-button-bgc: #0067FF;
+$apply-button-disabled-bgc: #F7F7FA;
+$main-box-width: 1860px;
+$main-box-height: 726px;
+$font: Noto Sans CJK KR;
+$logo-width: 1.7rem;
+
+@page {
+  margin: 0;
+  font-family: $font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  color: #202225;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: $header-height;
+  background-color: $header-bgc;
+  color: #FFFFFF;
+  font: $font;
+  display: inline-block;
+
+  .header-box {
+    margin-left: 1.7rem;
+  }
+
+  .header-logo {
+    width: $logo-width;
+    height: $logo-width * 0.656;
+    //margin-top: 0.75rem;
+    vertical-align: middle;
+  }
+
+  .header-bold {
+    display: inline-block;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+  }
+
+  .header-p {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+
